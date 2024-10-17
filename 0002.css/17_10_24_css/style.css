@@ -1,0 +1,48 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: slateblue;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+header > h1 {
+  text-decoration: underline;
+}
+
+main img {
+  width: 500px;
+  height: auto;
+}
+
+footer p {
+  color: antiquewhite;
+}
+
+.box {
+  width: 650px;
+  height: 365px;
+  padding: 20px;
+  border: 2px solid crimson;
+  margin: 20px;
+}
+
+body div img {
+    width: 650px;
+    height: auto;
+}
