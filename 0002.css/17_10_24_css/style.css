@@ -35,6 +35,7 @@ footer p {
 }
 
 .box {
+  
   width: 650px;
   height: 365px;
   padding: 20px;
@@ -43,6 +44,6 @@ footer p {
 }
 
 body div img {
-    width: 650px;
-    height: auto;
+  width: 650px;
+  height: auto;
 }
