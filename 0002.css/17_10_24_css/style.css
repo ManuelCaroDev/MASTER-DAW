@@ -1,6 +1,6 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: slateblue;
+  background-color: rgb(143, 137, 179);
   text-align: center;
 }
 
@@ -36,14 +36,22 @@ footer p {
 
 .box {
   
+  align-content: center;
   width: 650px;
   height: 365px;
   padding: 20px;
   border: 2px solid crimson;
   margin: 20px;
+  
 }
 
 body div img {
-  width: 650px;
+  width: 450px;
   height: auto;
+}
+
+div {
+
+  align-items: center;
+  
 }
