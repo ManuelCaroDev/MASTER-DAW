@@ -39,19 +39,8 @@ footer p {
   align-content: center;
   width: 650px;
   height: 365px;
-  padding: 20px;
+  padding: 0px;
   border: 2px solid crimson;
   margin: 20px;
-  
-}
-
-body div img {
-  width: 450px;
-  height: auto;
-}
-
-div {
-
-  align-items: center;
   
 }
