@@ -2,39 +2,129 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border-radius: 1rem;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-image: url(https://lumiere-a.akamaihd.net/v1/images/pp_xmen1992_herobanner_21369_2ead90c7.jpeg?region=0,0,2048,878);
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url(https://lumiere-a.akamaihd.net/v1/images/pp_xmen1992_herobanner_21369_2ead90c7.jpeg?region=0,0,2048,878);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
-    color: white;
-    text-align: center;
-    font-size: 2em;
-
+  color: white;
+  text-align: center;
+  font-size: 2em;
 }
 
 nav {
-    background-color: #333;
+  background-color: #333;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 nav li {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
+nav a {
+  display: block;
+  padding: 20px 0;
+  color: white;
+  text-decoration: none;
+}
+
+/*HOVER Y FOCUS AL NAV */
+nav:hover {
+  background-color: rgb(31, 31, 124);
+}
+
+nav a:focus {
+  background-color: black;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+section li {
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+/* SUSITUIR EL PUNTO DE LA LISTA POR LA X */
+
+section li::before {
+    content: "Ⓧ";
+    color: black;
+    padding-right: 3px;
+}
+
+section a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+/* AÑADIR CORCHETES A LOS ENLACES */
+
+section a::before {
+    content: "[";
+}
+
+section a::after {
+    content: "]";
+}
+
+
+/* AÑADIR HOVER A LOS ENLACES */
+
+section a:hover {
+    background-color: rgb(191, 225, 89);
+}
+
+
+/* AÑADIR FOCUS A LOS ENLACES */
+
+section a:focus {
+    background-color: gray;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8em;
+}
