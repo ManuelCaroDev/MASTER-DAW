@@ -1,0 +1,30 @@
+.tarjeta {
+  width: 600px;
+  height: auto;
+  margin: 50px auto;
+  border: 5px solid red;
+  border-radius: 1rem;
+}
+
+.fotoPerfil {
+  position: relative;
+  
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+  
+  padding: 20px;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+.nombre {
+  padding: 10px 20px;
+}
+
+.description {
+  padding: 20px;
+}
