@@ -1,7 +1,7 @@
 // == -> igual que
 // === -> estrictamente igual que (contenido y dato)
 // ! -> no (not)
-// != -> desigual que o diferente
+// != -> desigual que o diferente a
 // || -> o (pipe)
 // && - and o Y (ampersum)
 

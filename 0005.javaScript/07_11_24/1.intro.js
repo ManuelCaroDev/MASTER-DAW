@@ -16,5 +16,7 @@ let serie = "Dune" // se lee desde dentro de local y desde global, pero desde gl
 
 if(true){
     /* var movie //codigo a nivel local */
-
+    let movie = "The Matrix";
 }
+
+console.log(movie);

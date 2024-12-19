@@ -6,6 +6,7 @@ const movies = [
   "Police Story",
 ];
 
+//GO TO HELL
 console.log(movies.length);
 
 console.log(movies[2]);
