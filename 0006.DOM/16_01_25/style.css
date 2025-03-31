@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    min-height: 800vh;
+}
+
+body.dark {
+    color: white;
+    background-color: black;
+}
+button {
+    font-size: xx-large;
+    background-color: transparent;
+    border: none;
+
+}
+
+#result {
+    width: 100%;
+    border: solid 1px black;
+    position: fixed;
+    bottom: 0;
+}
