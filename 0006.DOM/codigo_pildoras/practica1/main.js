@@ -91,3 +91,32 @@ const orderTasks = (tasksToOrder) => {
 
 //llamada la funcion
 orderTasks(tasks);
+
+//funcion completar tareas a la que le llega la posicion de la tarea a la que le usuario le ha hecho click
+const complete = (i) => {
+    //acccedemos a esa posicion en el array de tareas y le cambiamos la propiedad completed a true
+    tasks[i].completed = true;
+    //ordenamos de nuevo las tareas, que esta funcion a su vez las pintara de nuevo ordenadas
+    orderTasks(tasks);
+} 
+
+const button = document.querrySelector(".new > button");
+
+button.addEventListener("click", addTask);
+
+//funcion añadir tarea, la cual se ejecuta cuando el usuario hace click en el boton
+const addTask = () => {
+    //recogemos el input, puesto que queremos el valor que el usuario haya introducido en el
+    const input = document.querySelector(".new > input");
+    //creamos la estructura que tienen TODAS nuestras tareas, ya que deberia ser igual, por defecto la creamos NO completada
+    const newTask = {
+        description: input.value, //input.value es el valor del input que ha escrito el usuario, el cual usamos en la propiedad description
+        completed: false
+    };
+    //añadimos la nueva tarea al principio de nuestro array con el metodo unShift
+    tasks.unshift(newTask);
+    //limpiamos el input
+    input.value = "";
+    //llamamos de nuevo a la funcion pintar para que nos pinte todas las tareas de nuevo ya que hemos añadido una nueva
+    printTasks(tasks);
+}
